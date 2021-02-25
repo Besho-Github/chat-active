@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+<title>Documentation - Commands</title>
+<style>
+	html {
+		padding-bottom:40px;
+	}
+	
+	body {
+		font-family:Tahoma;
+		font-size:13px;
+		color:#808080;
+	}
+	
+	img {
+		border:0px;
+	}
+	
+	a {
+		color:#4C77A5;
+	}
+	
+	#docwrapper {	
+		width:800px;
+		margin:auto;
+		margin-top:40px;
+	}
+	
+	#docsidebar {
+		width:120px;
+		float:left;
+		padding:20px;
+		border-radius:4px;
+		-webkit-border-radius:4px;
+	}
+	
+	#docsidebar li { list-style:none; padding:0; margin-bottom:5px; padding-bottom:5px; border-bottom:1px solid #f8f8f8; }
+	
+	#docmain {
+		float:right;
+		width:600px;
+		padding:20px;
+		overflow:auto;
+	}
+	
+	.title {
+		font-size:16px;
+	}
+	
+	.sub_title {
+		font-size:14px;
+		margin-bottom:5px;
+		color:#000000;
+	}
+	
+	.notes {
+		padding:5px;
+		margin-top:10px;
+		margin-bottom:10px;
+		color:#ffffff;
+		border-radius:3px;
+		background:#FF945D;
+	}
+	
+	p {
+		margin-top:10px;
+		margin-bottom:20px;
+	}
+	
+	#header {
+		font-size:16px;
+		border-bottom:1px solid #eaeaea;
+		padding-bottom:10px;
+	}
+	
+	#footer {
+		margin-top:40px;
+		font-size:11px;
+		color:#c0c0c0;
+	}
+	
+	.info {
+		font-size:10px;
+		margin-bottom:10px;
+	}
+	
+	.section {
+		padding:10px;
+		margin-bottom:20px;
+		border:1px solid #eaeaea;
+		font-size:13px;
+		background:#ffffff;
+		margin-top:10px;
+	}
+</style>
+</head>
+<body>
+	<div id="docwrapper">
+		<div id="header">
+			readyChat Documentation
+		</div>
+		<div id="docsidebar">
+			<div class="info">This document covers...</div>
+			<li>1) <a href="#commands">Chat Commands</a></li>
+		</div>
+		<div id="docmain">
+			<div class="title" id="commands">1) Chat Commands</div>
+			<p>
+				readyChat's commands allow moderators and administrators to control the chat room easily and remove trouble makers quickly.
+				<br /><br />
+				<strong>/kick</strong> <span style="color:orange;">username</span>
+				<div class="section" style="margin-top:-10px;">
+					The kick command allows you to disconnect a user from the chat room. They'll be able to log straight back in again, but as a first warning this can prove useful. To kick a user,
+					the correct syntax is "<strong>/kick</strong> <span style="color:orange;">username</span>". The user will be disconnected instantly and shown a kicked message.
+				</div>
+				
+				<strong>/ban</strong> <span style="color:orange;">username</span>
+				<div class="section">
+					The ban command is similar to the kick command. The difference is the user will not be able to log in after becoming a banned user. To ban a user,
+					the correct syntax is "<strong>/ban</strong> <span style="color:orange;">username</span>". The user will be disconnected instantly and shown a banned message.
+				</div>
+				
+				<strong>/warn</strong> <span style="color:orange;">username</span> <span style="color:#4B8DBC;">message</span>
+				<div class="section">
+					Warning a user will present them with a message on screen. This is a great way to grab someone's attention when they don't seem to be reading your messages. To warn a user,
+					the correct syntax is "<strong>/warn</strong> <span style="color:orange;">username</span> <span style="color:#4B8DBC;">message</span>".
+				</div>
+				
+				<strong>/prune</strong>
+				<div class="section">
+					The prune command will clear the messages from the room you're currently in. To clear messages from all rooms, the
+					<a href="../index.php?page=rooms&sub=maintenance&perform=1">Global Maintenance</a> tool would be more efficient.
+					the correct syntax is "<strong>/prune</strong>".
+				</div>
+			</p>
+			<div id="footer">
+				readyChat Documentation<br />
+				<a href="http://designskate.com/readychat">Chat Software</a> by DesignSkate
+			</div>
+		</div>
+	</div>
+</body>
+</html>

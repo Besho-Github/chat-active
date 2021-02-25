@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+<head>
+<title>Documentation - Users</title>
+<style>
+	html {
+		padding-bottom:40px;
+	}
+	
+	body {
+		font-family:Tahoma;
+		font-size:13px;
+		color:#808080;
+	}
+	
+	img {
+		border:0px;
+	}
+	
+	a {
+		color:#4C77A5;
+	}
+	
+	#docwrapper {	
+		width:800px;
+		margin:auto;
+		margin-top:40px;
+	}
+	
+	#docsidebar {
+		width:120px;
+		float:left;
+		padding:20px;
+		border-radius:4px;
+		-webkit-border-radius:4px;
+	}
+	
+	#docsidebar li { list-style:none; padding:0; margin-bottom:5px; padding-bottom:5px; border-bottom:1px solid #f8f8f8; }
+	
+	#docmain {
+		float:right;
+		width:600px;
+		padding:20px;
+		overflow:auto;
+	}
+	
+	.title {
+		font-size:16px;
+	}
+	
+	.sub_title {
+		font-size:14px;
+		margin-bottom:5px;
+		color:#000000;
+	}
+	
+	.notes {
+		padding:5px;
+		margin-top:10px;
+		margin-bottom:10px;
+		color:#ffffff;
+		border-radius:3px;
+		background:#FF945D;
+	}
+	
+	p {
+		margin-top:10px;
+		margin-bottom:20px;
+	}
+	
+	#header {
+		font-size:16px;
+		border-bottom:1px solid #eaeaea;
+		padding-bottom:10px;
+	}
+	
+	#footer {
+		margin-top:40px;
+		font-size:11px;
+		color:#c0c0c0;
+	}
+	
+	.info {
+		font-size:10px;
+		margin-bottom:10px;
+	}
+	
+	.section {
+		padding:10px;
+		margin-bottom:20px;
+		border:1px solid #eaeaea;
+		font-size:13px;
+		background:#ffffff;
+		margin-top:10px;
+	}
+</style>
+</head>
+<body>
+	<div id="docwrapper">
+		<div id="header">
+			readyChat Documentation
+		</div>
+		<div id="docsidebar">
+			<div class="info">This document covers...</div>
+			<li>1) <a href="#users">Users</a></li>
+			<li>2) <a href="#ranks">Ranks</a></li>
+			<li>3) <a href="#deleteusers">Deleting Users</a></li>
+			<li>4) <a href="#banusers">Banning Users</a></li>
+			<li>5) <a href="#blacklist">Blacklisting IPs</a></li>
+		</div>
+		<div id="docmain">
+			<div class="title" id="users">1) Users</div>
+			<p>
+				Users are probably required in order to run a successful chat website. As without them, well, there's not much chatting! You can disable the ability for users to register
+				from the administration panel, and create users manually. This is a great way to have a completely private chat room for your friends or co-workers. To disable registration,
+				<a href="../?page=settings&sub=login">click here</a>.
+			</p>
+			<div class="title" id="ranks">2) Ranks</div>
+			<p>
+				readyChat has 3 ranks. These include User, Moderator and Administrator. We'll explain what each rank can do on your chat room below.
+				<br /><br />
+				<strong>Users</strong>
+				<div class="section" style="margin-top:-10px;">
+					"Users" is the primary rank awarded to new registrants. They can use the chat functions on the front-end, but cannot moderate or manage the chat rooms. They also cannot be exempt from
+					the spam filters or the idle timers, though these features can be disabled entirely.
+				</div>
+				
+				<strong>Moderators</strong>
+				<div class="section">
+					Moderators have the ability to moderate the chat rooms and ensure users are following the rules. They have the ability to use commands such as "/prune" and "/kick" to moderate 
+					the chat. Moderators can be exempt from the spam timer and idle kicker if the site administrator has selected these options in the <a href="../?page=settings&sub=chat">chat settings</a>
+					but are restricted from spamming/idling by default. Moderators cannot enforce their powers on administrators.
+				</div>
+				
+				<strong>Administrators</strong>
+				<div class="section">
+					Administrators are in charge of the chat rooms and can overpower moderators when kicking/banning users. By default, chat room administrators are not granted access to the
+					<a href="../index.php">administrator control panel</a>. Any user in your chat can have access to the control panel if you set it for their account, this is not restricted to chat
+					administrators.
+				</div>
+			</p>
+			<div class="title" id="deleteusers">3) Deleting Users</div>
+			<p>
+				<a href="images/delete_users.jpg" target="_blank"><img src="images/delete_users.jpg" style="width:600px; border-radius:4px;"></a>
+				<br /><br />
+				The above image will help you understand what we're refering to in the following section.
+				<br /><br />
+				<strong>1</strong> - Remove accounts with the same I.P
+				<div class="section" style="margin-top:-10px;">
+					By selecting "Remove accounts with the same I.P" this will delete any other accounts the user has made whilst using the same I.P address. If the user was foolish and created multiple
+					accounts with the same I.P address, you can quickly crack down on this by selecting this option.
+				</div>
+				
+				<strong>2</strong> - Add I.P address to blacklist
+				<div class="section">
+					Adding the IP address to your blacklist will ensure that the user cannot login or create any new accounts whilst using that I.P address. The blacklist is stored in your database
+					and is checked when a user attempts to access your login/registration pages.
+				</div>
+				
+				<strong>3</strong> - Delete Now
+				<div class="section">
+					It's a self explanatory button, though we thought it'd be best to say that upon clicking this button, the tasks selected will be instantly attempted. There is no secondary
+					confirmation page to the deletion process. It is not possible to delete your main admin account (created when installing readyChat) for security reasons.
+				</div>
+			</p>
+			<div class="title" id="banusers">4) Banning Users</div>
+			<p>
+				<div class="sub_title"></div>
+				If the user is presently online, banning can be completed via command in-chat (/ban username). If however the user is offline, proceed to the <a href="index.php?page=users">user management</a>
+				section of your administration panel, find the user's account information and tick "Ban User". If the user is online when you do this, they will be presented with a "Banned" message and will
+				be disconnected.
+			</p>
+			<div class="title" id="blacklist">5) Blacklisting IPs</div>
+			<p>
+				<div class="sub_title"></div>
+				Blacklisting IP addresses allows you to deal with trouble makers more easily and for a longer period of time. It's not possible to use this method if the trouble maker 
+				regularly swapping IP addresses, though for those who aren't familiar with VPNS, proxies and a multitude of other options, this option should do you just fine.
+				<br /><br />
+				You can blacklist IP addresses by banning a user and selecting "Add I.P address to blacklist" or by visiting the <a href="../?page=users&sub=blacklist">blacklist page</a>
+				on the administration panel. From here you can view all blacklisted IPs, add new IPs and remove them too.
+			</p>
+			<div id="footer">
+				readyChat Documentation<br />
+				<a href="http://designskate.com/readychat">Chat Software</a> by DesignSkate
+			</div>
+		</div>
+	</div>
+</body>
+</html>

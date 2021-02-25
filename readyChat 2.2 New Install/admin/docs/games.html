@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<title>Documentation - Flash Games</title>
+<style>
+	html {
+		padding-bottom:40px;
+	}
+	
+	body {
+		font-family:Tahoma;
+		font-size:13px;
+		color:#808080;
+	}
+	
+	img {
+		border:0px;
+	}
+	
+	a {
+		color:#4C77A5;
+	}
+	
+	#docwrapper {	
+		width:800px;
+		margin:auto;
+		margin-top:40px;
+	}
+	
+	#docsidebar {
+		width:120px;
+		float:left;
+		padding:20px;
+		border-radius:4px;
+		-webkit-border-radius:4px;
+	}
+	
+	#docsidebar li { list-style:none; padding:0; margin-bottom:5px; padding-bottom:5px; border-bottom:1px solid #f8f8f8; }
+	
+	#docmain {
+		float:right;
+		width:600px;
+		padding:20px;
+		overflow:auto;
+	}
+	
+	.title {
+		font-size:16px;
+	}
+	
+	.sub_title {
+		font-size:14px;
+		margin-bottom:5px;
+		color:#000000;
+	}
+	
+	.notes {
+		padding:5px;
+		margin-top:10px;
+		margin-bottom:10px;
+		color:#ffffff;
+		border-radius:3px;
+		background:#FF945D;
+	}
+	
+	p {
+		margin-top:10px;
+		margin-bottom:20px;
+	}
+	
+	#header {
+		font-size:16px;
+		border-bottom:1px solid #eaeaea;
+		padding-bottom:10px;
+	}
+	
+	#footer {
+		margin-top:40px;
+		font-size:11px;
+		color:#c0c0c0;
+	}
+	
+	.info {
+		font-size:10px;
+		margin-bottom:10px;
+	}
+	
+	.section {
+		padding:10px;
+		margin-bottom:20px;
+		border:1px solid #eaeaea;
+		font-size:13px;
+		background:#ffffff;
+		margin-top:10px;
+	}
+</style>
+</head>
+<body>
+	<div id="docwrapper">
+		<div id="header">
+			readyChat Documentation
+		</div>
+		<div id="docsidebar">
+			<div class="info">This document covers...</div>
+			<li>1) <a href="#games">Flash Games</a></li>
+		</div>
+		<div id="docmain">
+			<div class="title" id="games">1) Flash Games</div>
+			<p>
+				Flash Games can be enabled in <a href="../index.php?page=settings">settings</a> and will allow users to keep themselves busy, and keep them chatting in the long run. readyChat does not
+				arrive bundled with any pre-installed games, though installing them is simple.
+			</p>
+			<p>
+				Once games are enabled, head over to games and <a href="../index.php?page=games&sub=new">Add a game</a>.<br /><br />
+				<strong>Game SWF:</strong><br />
+				The SWF is the location of the flash game file. This can be hosted on your server or externally, that much is up to you. You can find an excellent list of games over at
+				<a href="http://www.kongregate.com/games_for_your_site" target="_blank">Kongregate</a>.  You'll see they provide the code like below.
+				<div class="section" style="font-size:10px;">
+					&#0060;embed width="<strong style="color:blue;">800</strong>" height="<strong style="color:blue;">600</strong>" base="http://external.kongregate-games.com/gamez/0018/5217/live/" src="<strong style="color:orange;">http://external.kongregate-games.com/gamez/0018/5217/live/embeddable_185217.swf</strong>" type="application/x-shockwave-flash"&#0062;&#0060;/embed&#0062;
+				</div>
+				The orange text is the only thing you'll need to enter in the SWF field. The icon file can be found from Kongregate's site next to the game's title. You can also find the required
+				<em>Width</em> and <em>Height</em> variables marked in blue.
+			</p>
+			<div id="footer">
+				readyChat Documentation<br />
+				<a href="http://designskate.com/readychat">Chat Software</a> by DesignSkate
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+<title>Documentation - Rooms</title>
+<style>
+	html {
+		padding-bottom:40px;
+	}
+	
+	body {
+		font-family:Tahoma;
+		font-size:13px;
+		color:#808080;
+	}
+	
+	a {
+		color:#4C77A5;
+	}
+	
+	#docwrapper {	
+		width:800px;
+		margin:auto;
+		margin-top:40px;
+	}
+	
+	#docsidebar {
+		width:120px;
+		float:left;
+		padding:20px;
+		border-radius:4px;
+		-webkit-border-radius:4px;
+	}
+	
+	#docsidebar li { list-style:none; padding:0; margin-bottom:5px; padding-bottom:5px; border-bottom:1px solid #f8f8f8; }
+	
+	#docmain {
+		float:right;
+		width:600px;
+		padding:20px;
+	}
+	
+	.title {
+		font-size:16px;
+	}
+	
+	.sub_title {
+		font-size:14px;
+		margin-bottom:5px;
+		color:#000000;
+	}
+	
+	.notes {
+		padding:5px;
+		margin-top:10px;
+		margin-bottom:10px;
+		color:#ffffff;
+		border-radius:3px;
+		background:#FF945D;
+	}
+	
+	p {
+		margin-top:10px;
+		margin-bottom:20px;
+	}
+	
+	#header {
+		font-size:16px;
+		border-bottom:1px solid #eaeaea;
+		padding-bottom:10px;
+	}
+	
+	#footer {
+		margin-top:40px;
+		font-size:11px;
+		color:#c0c0c0;
+	}
+	
+	.info {
+		font-size:10px;
+		margin-bottom:10px;
+	}
+</style>
+</head>
+<body>
+	<div id="docwrapper">
+		<div id="header">
+			readyChat Documentation
+		</div>
+		<div id="docsidebar">
+			<div class="info">This document covers...</div>
+			<li>1) <a href="#rooms">Rooms</a></li>
+			<li>2) <a href="#moderators">Moderators</a></li>
+			<li>3) <a href="#newroom">Creating a room</a></li>
+			<li>4) <a href="#functions">Admin functions</a></li>
+		</div>
+		<div id="docmain">
+			<div class="title" id="rooms">1) Rooms</div>
+			<p>
+				Rooms allow you to create sub-topics in your chat room or entirely new topics altogether. <em>readyChat's</em> room system allows you
+				to create an unlimited number of rooms quickly and easily from your administration panel.
+				Rooms are lightweight files stored in the chat/ directory on your server. This allows for fast swapping between rooms without straining your web server.
+			</p>
+			<div class="title" id="moderators">2) Moderators</div>
+			<p>
+				At this time moderators can moderate globally. At a future time this may be change to include room specific moderators.
+			</p>
+			<div class="title" id="newroom">3) Creating a room</div>
+			<p>
+				Creating a new room is an easy task, you'll have multiple rooms in no time! See below for an explanation of the required fields.
+				<br /><br />
+				<strong>Room Title</strong><br />
+				The room title is self explanatory. This is the title of your new chat room. Don't worry, you can change this later if you're not satisfied. This should be a short nippy title else it won't
+				display too nicely on the rooms list.
+				<br /><br />
+				<strong>Room Topic</strong><br />
+				The topic is displayed at the top of the chat when a user connects to a room. It can be useful for outlining the basic room rules, or for setting a topic users must relate their chats to.
+				<br /><br />
+				<strong>Room Limit</strong><br />
+				The room limit allows a set number of people into the chat room at any one time. The recommended value is 25, though it can be set higher. We recommend keeping your lobby limit high
+				so users won't have a problem connecting initially.
+				<br /><br />
+				<strong>Room Icon</strong><br />
+				To set a room icon, insert an URL into this field. The recommended size is 16x16/12x12 (px) though icons will be resized regardless of what size you enter.
+				<br /><br />
+				<strong>Room Password</strong><br />
+				If a room password is present, users must enter it before they can enter the room. This is perfect for admin only rooms, or rooms where you'd like a select few members to enter.
+				Passwords should contain letters and numbers, other characters are accepted but are not recommended.
+			</p>
+			<div class="title" id="functions">4) Admin Functions</div>
+			<p>
+				<div class="sub_title">Prune chat rooms</div>
+				Similar to the <em>/prune</em> command that can be run inside individual rooms, this task will prune all chat rooms instantly to clear old messages.
+			</p>
+			<p>
+				<div class="sub_title">Kicking all users from chat</div>
+				The "Kick all users from chat" option allows you to kick all users from all rooms. This might be useful if you wish to close your chat site for maintenance and cannot risk doing it
+				whilst chatters are online. The suggested method of use is heading to <em>site settings</em> and closing the login form. After doing this, kicking the site will disconnect
+				any clients and prevent them from logging in.
+				
+				<div class="notes">"Kick all users from chat" will kick moderators but not administrators.</div>
+			</p>
+			<p>
+				<div class="sub_title">Send global announcement</div>
+				Sending a global announcement will send a message to all rooms which you can define. This is useful for announcing competitions, information regarding the chat and more. The system uses the same
+				method for parsing as the live chat does, therefore HTML is disabled. You can insert links by typing it out in full. For example, "http://google.com".
+			</p>
+			<div id="footer">
+				readyChat Documentation<br />
+				<a href="http://designskate.com/readychat">Chat Software</a> by DesignSkate
+			</div>
+		</div>
+	</div>
+</body>
+</html>
