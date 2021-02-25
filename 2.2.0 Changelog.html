@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<title>2.2 Changelog</title>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<style>
+	html {
+		padding-bottom:40px;
+	}
+	
+	body {
+		font-family: 'Open Sans', sans-serif;
+		font-size:13px;
+		color:#808080;
+		background:#eaeaea;
+		margin:0;
+	}
+	
+	img {
+		border:0px;
+	}
+	
+	a {
+		color:#4C77A5;
+	}
+	
+	#docwrapper {	
+		width:800px;
+		margin:auto;
+		background:#ffffff;
+		overflow:auto;
+		border-radius:0px 0px 4px 4px;
+		-webkit-border-radius:0px 0px 4px 4px;
+		-moz-border-radius:0px 0px 4px 4px;
+		box-shadow: 5px 5px 5px #DDDDDD;
+	}
+	
+	#docsidebar {
+		width:120px;
+		float:left;
+		padding:20px;
+		border-radius:4px;
+		-webkit-border-radius:4px;
+	}
+	
+	#docsidebar li { list-style:none; padding:0; margin-bottom:5px; padding-bottom:5px; border-bottom:1px solid #f8f8f8; }
+	
+	#docmain {
+		float:right;
+		width:600px;
+		padding:20px;
+		overflow:auto;
+	}
+	
+	.title {
+		font-size:16px;
+	}
+	
+	.sub_title {
+		font-size:14px;
+		margin-bottom:5px;
+		color:#000000;
+	}
+	
+	.notes {
+		padding:5px;
+		margin-top:10px;
+		margin-bottom:10px;
+		color:#ffffff;
+		border-radius:3px;
+		background:#FF945D;
+	}
+	
+	p {
+		margin-top:10px;
+		margin-bottom:20px;
+	}
+	
+	#header {
+		font-size:16px;
+		border-bottom:1px solid #eaeaea;
+	}
+	
+	#footer {
+		margin-top:40px;
+		font-size:11px;
+		color:#c0c0c0;
+	}
+	
+	.info {
+		font-size:10px;
+		margin-bottom:10px;
+	}
+	
+	.section {
+		padding:10px;
+		margin-bottom:20px;
+		border:1px solid #eaeaea;
+		font-size:13px;
+		background:#ffffff;
+		margin-top:10px;
+	}
+</style>
+</head>
+<body>
+	<div id="docwrapper">
+		<div id="header">
+			<img src="logo.png" style="margin-bottom:-5px;">
+		</div>
+		<div id="docsidebar">
+			<div class="info"> 2.2 Changelog</div>
+		</div>
+		<div id="docmain">
+			Dear customer,
+			<br /><br />
+			Thank you for purchasing readyChat. This document outlines the updates included with this version of readyChat. It is our priority to resolve any 
+			issues with this product and we urge you to report any problems you encounter, regardless of their severity.
+			<br /><br />
+			We hope this small update introduces some product enhancements and fixes issues in your installation of readyChat.
+			
+			<div style="margin-top:20px; margin-bottom:20px; border-top:1px solid #eaeaea;"></div>
+			
+			<div class="title" id="profiles">readyChat 2.2 Changelog</div>
+			<p>
+				<li>[BUG FIX] Potential bug which prevents headers from working on some servers now fixed.</li>
+				<li>[BUG FIX] Fixed PHP notice in admin/pages/games.php related to MySQL query.</li>
+				<li>[BUG FIX] Guests would not see a kick/ban notice, only error messages.</li>
+				<br />
+				<li>[NEW] Error reporting has been disabled via `core/rc/config.inc.php` for production servers.</li>
+				<li>[NEW] Version information added to admin dashboard.</li>
+				<li>[NEW] readyChat version check now functional from admin dashboard.</li>
+				<li>[NEW] You can now kick/ban guests from the user management pages inside the admin panel.</li>
+				<br />
+				<li>[CHANGE] Rank images on admin user list replaced with avatars.</li>
+				<li>[CHANGE] Chat history has been redesigned and integrated with admin.</li>
+				<li>[CHANGE] Cleaned `core/paginate.php` - Bad code indentation.</li>
+			</p>			
+			<div id="footer">
+				readyChat Documentation<br />
+				<a href="http://designskate.com/readychat">Chat Software</a> by DesignSkate
+			</div>
+		</div>
+	</div>
+</body>
+</html>
