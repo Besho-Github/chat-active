@@ -1,0 +1,14 @@
+
+
+	This update requires no database changes.
+	------
+	Please review a list of the changed files in -- CHANGED FILES --.txt to ensure we haven't overwritten any important modifications
+	you may have made. Please note all files are required for the update to be successful, we are unable to provide support if you haven't fully updated
+	your readyChat install.
+	
+	Simply overwrite the files on your readyChat install with the files included in this ZIP folder. readyChat is now updated.
+	
+	For support or queries regarding the update process, please contact us via CodeCanyon or send an email to contact@designskate.com.
+	
+	All the best,
+	DesignSkate Customer Service

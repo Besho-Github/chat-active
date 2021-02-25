@@ -1,0 +1,21 @@
+
+	
+	-- Files Changed --
+	
+	- index.php
+	- core/rc/config.inc.php
+	- core/paginate.php
+	- core/notify.php
+	- core/paginate.php
+	- admin/template/icons/theme_icon.png
+	- admin/pages/settings.php
+	- admin/pages/dashboard.php
+	- admin/pages/users.php
+	- admin/pages/games.php
+	- admin/pages/rooms.php
+	- admin/pages/credits.php
+	- admin/pages/history.php
+	- admin/index.php
+	- admin/template/style.css
+	- admin/template/images/logo.png
+	- admin/adminjs.js
