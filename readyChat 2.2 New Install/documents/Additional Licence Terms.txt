@@ -1,0 +1,11 @@
+ReadyChat 2.2.0 by DesignSkate Software (c) 2013
+---------------------------------------------------
+
+DesignSkate - Additional Licence Terms (for readyChat software)
+
+readyChat is property of DesignSkate. The front-end copyright notice (Chat Software by DesignSkate) may be removed or altered providing 
+you do not claim the software was created by you. Copyright notices on the back-end of the system (administration panel) and in readyChat's source 
+code may not be altered or removed for any reason.
+
+DesignSkate reserves the right to limit or terminate your client account (if activated on clients.designskate.com) if you do not follow the 
+Additional Terms outlined above.

@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+<head>
+<title>Documentation - Getting Started</title>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<style>
+	html {
+		padding-bottom:40px;
+	}
+	
+	body {
+		font-family: 'Open Sans', sans-serif;
+		font-size:13px;
+		color:#808080;
+		background:#eaeaea;
+		margin:0;
+	}
+	
+	img {
+		border:0px;
+	}
+	
+	a {
+		color:#4C77A5;
+	}
+	
+	#docwrapper {	
+		width:800px;
+		margin:auto;
+		background:#ffffff;
+		overflow:auto;
+		border-radius:0px 0px 4px 4px;
+		-webkit-border-radius:0px 0px 4px 4px;
+		-moz-border-radius:0px 0px 4px 4px;
+		box-shadow: 5px 5px 5px #DDDDDD;
+	}
+	
+	#docsidebar {
+		width:120px;
+		float:left;
+		padding:20px;
+		border-radius:4px;
+		-webkit-border-radius:4px;
+	}
+	
+	#docsidebar li { list-style:none; padding:0; margin-bottom:5px; padding-bottom:5px; border-bottom:1px solid #f8f8f8; }
+	
+	#docmain {
+		float:right;
+		width:600px;
+		padding:20px;
+		overflow:auto;
+	}
+	
+	.title {
+		font-size:16px;
+	}
+	
+	.sub_title {
+		font-size:14px;
+		margin-bottom:5px;
+		color:#000000;
+	}
+	
+	.notes {
+		padding:5px;
+		margin-top:10px;
+		margin-bottom:10px;
+		color:#ffffff;
+		border-radius:3px;
+		background:#FF945D;
+	}
+	
+	p {
+		margin-top:10px;
+		margin-bottom:20px;
+	}
+	
+	#header {
+		font-size:16px;
+		border-bottom:1px solid #eaeaea;
+	}
+	
+	#footer {
+		margin-top:40px;
+		font-size:11px;
+		color:#c0c0c0;
+	}
+	
+	.info {
+		font-size:10px;
+		margin-bottom:10px;
+	}
+	
+	.section {
+		padding:10px;
+		margin-bottom:20px;
+		border:1px solid #eaeaea;
+		font-size:13px;
+		background:#ffffff;
+		margin-top:10px;
+	}
+</style>
+</head>
+<body>
+	<div id="docwrapper">
+		<div id="header">
+			<img src="images/logo.png" style="margin-bottom:-5px;">
+		</div>
+		<div id="docsidebar">
+			<div class="info">This document covers...</div>
+			<li>1) <a href="#started">Getting Started</a></li>
+			<li>2) <a href="#folders">Permissions</a></li>
+			<li>3) <a href="#mysql">MySQL</a></li>
+			<li>4) <a href="#tables">MySQL Tables</a></li>
+			<li>5) <a href="#account">Admin Account</a></li>
+			<li>6) <a href="#installed">Install Complete</a></li>
+			<li>7) <a href="#ready">It's Ready!</a></li>
+		</div>
+		<div id="docmain">
+			<div class="title" id="started">1) Getting Started</div>
+			<p>
+				Thanks for purchasing readyChat. If you're wondering what you should do first, this document will help you out. Firstly, you should upload all files found in the readyChat zip to your
+				web-host or web-server. After all files are online, head to the directory readyChat is going to be installed to.
+				<div class="section">readyChat can be installed to the root directory or a sub-directory. This means you can have your chat in it's own folder (site.com/chat/).</div>
+			</p>
+			<p>
+				You should be redirected to the installation screen after opening up the page. If you are not, head to <strong>http://yoursite.com/readyChat/install/</strong>. Note that "readyChat" should
+				be replaced with the directory you created, or removed if you're using the root directory.
+			</p>
+			<div class="title" id="folders">2) Permissions</div>
+			<p>
+				readyChat requires several folders to be writable, please ensure they are writable before proceeding with the installation.
+				<div class="section">
+					<img src="images/install_permissions.jpg" style="width:580px;">
+				</div>
+				If your installation screen matches the above, your folder permissions are correct. If there are errors, please CHMOD the required folders to 777 to ensure they can be written to.
+			</p>	
+			<div class="title" id="mysql">3) MySQL</div>
+			<p>
+				Configuring your MySQL settings should be simple. Though this requires the <em>core</em> folder to be writable, which is why the above section is so important.
+				<div class="section">
+					<img src="images/install_mysql.jpg" style="width:580px;">
+				</div>
+				Fill in the above fields with your database credentials, most should be self explanatory. The password key should be a unique string (a mixture of numbers and letters).				
+				<br /><br />
+				This string will ensure that passwords encrypted on your chat room are fully unique and cannot be decrypted without this string. Even with it, it'll take a long time to decrypt.
+				<div class="section">
+					Having trouble with the above form? You can fill out the database credentials manually in <em>core/database.php.default</em> - remember to remove the .default from the end of the file
+					to replace <em>database.php</em>!
+					<br /><br />
+					After manually editing your credentials, skip to <em>index_5.php</em> (IE: install/index_5.php) to continue the installation.
+				</div>
+			</p>
+			<div class="title" id="tables">4) MySQL Tables</div>
+			<p>
+				After configuring your MySQL settings, you'll be required to install readyChat's tables. This step is one of the fastest and you should see a message like in the image below.
+				<div class="section">
+					<img src="images/install_tables.jpg" style="width:580px;">
+				</div>
+				If you're having problems with this step, the most likely cause is an invalid MySQL configuration.
+			</p>				
+			<div class="title" id="account">5) Admin Account</div>
+			<p>
+				This is the final installation step. Create an admin username which consists of <strong>letters or numbers</strong> only. readyChat does not support special characters. Proceed to
+				create a secure password and hit continue.
+				<div class="section">
+					<img src="images/install_account.jpg" style="width:580px;">
+				</div>
+			</p>	
+			<div class="title" id="installed">6) Installed</div>
+			<p>
+				You should now see a screen like in the image below.
+				<div class="section">
+					<img src="images/install_complete.jpg" style="width:580px;">
+				</div>
+				The only difference should be the username and password chosen, unless of course you're copying this Getting Started document to the max!
+			</p>		
+			<div class="title" id="ready">7) It's Ready!</div>
+			<p>
+				<div class="section">
+					<img src="images/install_ready.jpg" style="width:580px;">
+				</div>
+				Have fun in your new chat room, you can login with the admin account you created in the final step and start chatting!
+			</p>					
+			<div id="footer">
+				readyChat Documentation<br />
+				<a href="http://designskate.com/readychat">Chat Software</a> by DesignSkate
+			</div>
+		</div>
+	</div>
+</body>
+</html>
